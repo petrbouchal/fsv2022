@@ -1,0 +1,281 @@
+---
+title: "Evidence, Policy and the Places in Between"
+subtitle: "Guest Lecture for *Administered Societies*"
+author: "Petr Bouchal"
+date: 12 May 2022, FSV UK
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, slides.css]
+    lib_dir: libs
+    yolo: false
+    mathjax: NULL
+    includes:
+      in_header: meta.html
+    seal: true 
+    nature:
+      ratio: 16:9
+      slideNumberFormat: ""
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [bottom, left, inverse]
+      beforeInit: "macros.js"
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(fig.retina = 3, echo = F,
+                      cache = F,
+                      warning = F,
+                      comment = "",
+                      dev = "ragg_png",
+                      fig.showtext = T,
+                      message = F)
+library(fontawesome)
+library(tidyverse)
+library(ptrr)
+library(ragg)
+library(knitr)
+
+library(xaringanExtra)
+library(flipbookr)
+
+ptrr::set_geom_defaults()
+ptrr::set_ptrr_ggplot_fonts()
+update_geom_defaults("rect", list(fill = "blue"))
+
+options(tibble.print_min = 20)
+```
+
+```{r, include=FALSE}
+xaringanExtra::use_xaringan_extra("share_again")
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         
+  mute_unhighlighted_code = TRUE  
+)
+```
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#0000ff",
+  header_font_google = google_font("IBM Plex Sans"),
+  text_font_google   = google_font("IBM Plex Sans"),
+  code_font_google   = google_font("IBM Plex Mono"),
+  table_row_even_background_color = "fff"
+)
+```
+
+```{r fonts, include=FALSE}
+ptrr::register_plexsans()
+ptrr::register_plexsans_condensed()
+```
+
+```{r meta, include=FALSE}
+library(metathis)
+meta() %>%
+  meta_general(
+    description = "Description",
+    generator = "xaringan and remark.js"
+  ) %>% 
+  meta_name("github-repo" = "petrbouchal/fsv2022") %>% 
+  meta_social(
+    title = "Title",
+    url = "https://petrbouchal.xyz/xxx",
+    image = "https://petrbouchal.xyz/xxx/slides/twitter_card.png",
+    image_alt = "social alt",
+    og_type = "website",
+    og_locale = "cs_CZ",
+    og_author = "Petr Bouchal",
+    twitter_card_type = "summary_large_image",
+    twitter_creator = "@petrbouchal"
+  ) %>% 
+  write_meta("meta.html")
+```
+
+class: left, middle, inverse
+
+# Why you might want to listen to me
+
+---
+
+class: left, middle, medium
+
+.pull-left[
+
+Led strategy and evaluation units at Ministry of Reg. Dev't, Prague IPR, & a consulting firm
+
+Do external analysis for government and NGO's, mostly using public data
+
+]
+
+.pull-right[
+
+Also do research on government: Czech Priorities, IDEA CERGE-EI, ex-Institute for Government (UK)
+
+Projekt PANK: supporting analytical capacities in gov
+
+]
+
+---
+class: left, middle, large
+
+ 1\. Looking at evidence a good way to think through how gov't works
+
+--
+
+ 2\. You can find yourselves in researcher / gov analyst roles
+
+--
+
+ 3\. Knowledge of PA concepts helps explain puzzles about policy & evidence 
+
+---
+
+
+
+class: left, middle, inverse
+
+# Some core questions
+
+---
+class: left, middle, large
+
+ # 1\. What is policy?
+
+---
+class: large
+
+# Some provocations
+
+- not just what politicians decide
+- one policy ≠ one place in government
+- does not happen in a linear way
+- blurry line between "policy" and "implementation"
+
+---
+class: left, middle, large
+
+ # 2\. What is evidence?
+
+---
+class: large
+
+# Some provocations
+
+- not just research
+- (what is good evidence?)
+- what questions? ("What works?" Any others?)
+- what researchers consider evidence x what gov considers
+- useful term? What about "knowledge"? "Learning?"
+
+---
+class: left, middle, large
+
+ # 3\. Why is evidence not used?
+
+---
+class: left, middle, large
+
+# Some ideas
+
+- a gap between two worlds?
+- a supply x demand mismatch?
+- an organisational issue? psychological factors?
+- a skills issue?
+- misunderstanding how policy works?
+- how useful is learning from medicine, public health, education?
+- cf. knowledge brokering, policy labs
+
+---
+class: large
+
+# Trying to help: project hypotheses
+
+--
+- work at the team level
+--
+
+- address processes, ways of working, not just structures and skills
+--
+
+- some evidence on what works for getting evidence used, not much on improving "evidence work" generally in practice
+--
+
+- adapt existing good practices, learn from what happens
+
+---
+class: medium
+
+# What does it look like in the wild?
+
+- wide variety of evidence work and organisational setups: from data teams to policy & admin teams
+
+--
+
+- few overarching standards for "evidence work"
+  - no official recognition of "analyst" as a role or profession
+  - ditto for "evidence use" as a basic skill of a public official
+  - emerging bottom-up professional community
+  - many analytical roles only within ad-hoc projects
+  
+---
+class: medium
+
+# What does it look like in the wild? cont'd
+
+- islands of excellence for specific types of evidence work
+--
+
+- lots of "small" policy at working/operational level
+- much potential in using evidence to improve implementation and connect parts of the system, build feedback loops
+
+---
+class: large
+
+# For the budding public officials: what kinds of skills are needed?
+
+- doing basic policy analysis
+- user focus, user/stakeholder engagement & rsrch
+- whole system thinking
+- evidence literacy, evidence synthesis
+- data literacy and data analysis skills
+- data and knowledge management
+- management skills and habits
+
+---
+class: center, middle, inverse?
+
+Thoughts?
+
+---
+
+class: center, middle, large
+
+
+[petrbouchal.xyz/fsv2022](https://petrbouchal.xyz/fsv2021)
+
+[pank.cz](https://pank.cz)
+
+[ceskepriority.cz](https://ceskepriority.cz)
+
+---
+
+class: inverse, bottom, right, large
+layout: false
+
+<a href="https://twitter.com/petrbouchal">`r fa("twitter", fill = "white")`</a> <a href="https://github.com/petrbouchal">`r fa("github", fill = "white")`</a> <a href="https://linkedin.com/in/petrbouchal">`r fa("linkedin", fill = "white")`</a> petrbouchal  
+[petrbouchal.xyz](https://petrbouchal.xyz)  
+pbouchal@gmail.com
+
+
+
+
+
