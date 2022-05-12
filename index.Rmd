@@ -259,6 +259,7 @@ Thoughts?
 
 class: center, middle, large
 
+Thank you
 
 [petrbouchal.xyz/fsv2022](https://petrbouchal.xyz/fsv2021)
 
